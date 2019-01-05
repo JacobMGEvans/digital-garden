@@ -18,4 +18,5 @@ Boolean; // simple one its either true or false
 // if else -> simple logic control
 // for -> looping logic
 // while -> another kind of looping logic
-//
+// functions -> blocks of code that do something with data when
+// called/invoked
