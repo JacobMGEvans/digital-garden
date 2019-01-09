@@ -1,15 +1,13 @@
-const gpujs = require(`gpu.js`);
-const gpu = new gpujs();
+const gpu = new GPU({ mode: `webgl` });
 
-gpu
+const render = gpu
   .createKernel(function () {
-    this.color(this.thread.x / 500, this.thread.y / 500, 0.4, 1);
+    this.color(0, 0, 0, 1);
   })
-  .setOutput([500, 500])
+  .setOutput([20, 20])
   .setGraphical(true);
 
-gpu();
+render();
 
-const canvas = gpu.getCanvas();
-
-document.getElementById(`root`).append(canvas);
+const canvas = render.getCanvas();
+document.getElementsByTagName(`body`)[0].appendChild(canvas);
