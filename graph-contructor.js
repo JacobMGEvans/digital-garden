@@ -64,4 +64,30 @@ graph.addEdge(`Jacob`, `Partner`);
 graph.addEdge(`Jacob`, `Child`);
 graph.addEdge(`Partner`, `Takun`);
 graph.addEdge(`Child`, `Takun`);
-console.log(graph.print);
+console.log(graph.print());
+
+// Breadth First Search
+function breadthFirstSearch(startingNodeKey, visitFN) {
+  const startingNode = this.getNode(startingNodeKey);
+  const visited = nodes.reduce((acc, node) => {
+    acc[node.key] = false;
+    return acc;
+  }, {});
+  const queue = createQueue();
+  queue.enqueue(startingNode);
+
+  while (!queue.isEmpty()) {
+    const currentNode = queue.dequeue();
+
+    if (!visited[currentNode.key]) {
+      visitFn(currentNode);
+      visited[currentNode.key] = true;
+    }
+
+    currentNode.neighbors.forEach(node => {
+      if (!visited[node.key]) {
+        queue.enqueue(node);
+      }
+    });
+  }
+}
