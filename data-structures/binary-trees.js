@@ -1,7 +1,7 @@
 // Binary Trees and Traversal
 // Binary Trees are trees whose nodes can only have up to two children
 
-function createBinaryNode(key) {
+export function createBinaryNode(key) {
   return {
     key,
     left: null,
@@ -43,7 +43,7 @@ const TRAVERSALS = {
   },
 };
 
-function createBinaryTree(rootKey) {
+export function createBinaryTree(rootKey) {
   const root = createBinaryNode(rootKey);
 
   return {
@@ -62,15 +62,15 @@ function createBinaryTree(rootKey) {
   };
 }
 
-const tree = createBinaryTree(`a`);
-const b = tree.root.addLeft(`b`);
-const c = tree.root.addRight(`c`);
-const d = b.addLeft(`d`);
-const e = b.addRight(`e`);
-const f = c.addLeft(`f`);
-const g = c.addRight(`g`);
-const h = d.addLeft(`h`);
-const i = d.addRight(`i`);
+// const tree = createBinaryTree(`a`);
+// const b = tree.root.addLeft(`b`);
+// const c = tree.root.addRight(`c`);
+// const d = b.addLeft(`d`);
+// const e = b.addRight(`e`);
+// const f = c.addLeft(`f`);
+// const g = c.addRight(`g`);
+// const h = d.addLeft(`h`);
+// const i = d.addRight(`i`);
 
-// print takes in enums for search types
-console.log(tree.print(`POST_ORDER`));
+// // print takes in enums for search types
+// console.log(tree.print(`POST_ORDER`));
