@@ -24,7 +24,9 @@ export function createQueue() {
     },
   };
 }
-// Priority Queue
+
+// Priority Queue => utulizing the
+// function createQueue()
 export function createPriorityQueue() {
   const lowPriorityQueue = createQueue();
   const highPriorityQueue = createQueue();

@@ -1,8 +1,7 @@
 import createQueue from "./queue-data-structure";
 
-const createNode = key => {
+export const createNode = key => {
   const neighbors = [];
-
   return {
     key,
     neighbors,
@@ -12,7 +11,7 @@ const createNode = key => {
   };
 };
 
-const createGraph = (directed = false) => {
+export const createGraph = (directed = false) => {
   const nodes = [];
   const edges = [];
   return {
@@ -101,26 +100,26 @@ const createGraph = (directed = false) => {
   };
 };
 
-//! depthfirst search dummy data - works!
-const graph = createGraph(true);
-const nodes = [`a`, `b`, `c`, `d`, `e`, `f`];
-const edges = [
-  [`a`, `b`],
-  [`a`, `e`],
-  [`a`, `f`],
-  [`b`, `d`],
-  [`b`, `e`],
-  [`c`, `b`],
-  [`d`, `c`],
-  [`d`, `e`],
-];
-nodes.forEach(node => graph.addNode(node));
-edges.forEach(allNodes => graph.addEdge(...allNodes));
-graph.depthFirstSearch(`a`, node => {
-  console.log(node.key);
-});
+// //! depthfirst search dummy data - works!
+// const graph = createGraph(true);
+// const nodes = [`a`, `b`, `c`, `d`, `e`, `f`];
+// const edges = [
+//   [`a`, `b`],
+//   [`a`, `e`],
+//   [`a`, `f`],
+//   [`b`, `d`],
+//   [`b`, `e`],
+//   [`c`, `b`],
+//   [`d`, `c`],
+//   [`d`, `e`],
+// ];
+// nodes.forEach(node => graph.addNode(node));
+// edges.forEach(allNodes => graph.addEdge(...allNodes));
+// graph.depthFirstSearch(`a`, node => {
+//   console.log(node.key);
+// });
 
-//! Checking if the graph factory - works!
+// //! Checking if the graph factory - works!
 // const graph = createGraph(true);
 // graph.addNode(`Jacob`);
 // graph.addNode(`Child`);
