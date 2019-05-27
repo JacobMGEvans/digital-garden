@@ -18,7 +18,10 @@ export function createBinaryNode(key) {
     },
   };
 }
-// ENUMS
+
+/** TRAVERSALS enums for search types
+ * @enum {@function(node, callback)}
+ */
 const TRAVERSALS = {
   IN_ORDER: (node, visitFn) => {
     if (node !== null) {
