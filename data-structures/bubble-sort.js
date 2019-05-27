@@ -22,5 +22,6 @@ export function bubbleSort(array) {
   return array;
 }
 
-const numbers = [10, 5, 6, 3, 2, 8, 9, 4, 7, 1];
-bubbleSort(numbers);
+//! bubbleSort() test - works
+// const numbers = [10, 5, 6, 3, 2, 8, 9, 4, 7, 1];
+// console.log(bubbleSort(numbers));
