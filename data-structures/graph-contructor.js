@@ -120,13 +120,14 @@ export const createGraph = (directed = false) => {
 // });
 
 // //! Checking if the graph factory - works!
-// const graph = createGraph(true);
-// graph.addNode(`Jacob`);
-// graph.addNode(`Child`);
-// graph.addNode(`Partner`);
-// graph.addNode(`Takun`);
-// graph.addEdge(`Jacob`, `Partner`);
-// graph.addEdge(`Jacob`, `Child`);
-// graph.addEdge(`Partner`, `Takun`);
-// graph.addEdge(`Child`, `Takun`);
-// console.log(graph.print());
+const graph = createGraph(true);
+graph.addNode(`Jacob`);
+graph.addNode(`Child`);
+graph.addNode(`Partner`);
+graph.addNode(`Takun`);
+graph.addEdge(`Jacob`, `Partner`);
+graph.addEdge(`Jacob`, `Child`);
+graph.addEdge(`Partner`, `Child`);
+graph.addEdge(`Partner`, `Takun`);
+graph.addEdge(`Child`, `Takun`);
+console.log(graph.print());
