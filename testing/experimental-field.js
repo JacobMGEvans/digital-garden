@@ -9,6 +9,7 @@ const randomIntGenerator = ind => Math.floor(ind * Math.random() * 10);
 /**
  * @function convertAnagram converts a string into an anagram of itself.
  * @param {String} str string to be transformed.
+ * @note This could likely be converted to a recursive function.
  */
 const convertAnagram = str => {
   const memory = [];
