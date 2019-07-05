@@ -5,7 +5,7 @@
   "scripts": {
     "start": "babel-node server.js",
     "watch": "parcel watch index.html",
-    "test": "yarn jest"
+    "test": "jest"
   },
   "license": "MIT",
   "dependencies": {
