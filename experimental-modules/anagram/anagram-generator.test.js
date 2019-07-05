@@ -1,4 +1,4 @@
-import { convertAnagram } from "./experimental-field";
+import { convertAnagram } from "./anagram-generator";
 
 describe(`experimental-coding modules`, async () => {
   test(`should recieve string and convert it to an anagram with no side effects`, async () => {
