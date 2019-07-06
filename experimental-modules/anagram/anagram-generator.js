@@ -1,5 +1,3 @@
-const TEST_STRING = `HELLOWORLD`;
-
 /**
  * @function randomIntGenerator used to get random number for string positionrandomizing
  * @param {Integer} ind index passed in to further pseudo randomize
@@ -20,6 +18,4 @@ const convertAnagram = str => {
   return memory.join(``);
 };
 
-console.log(convertAnagram(TEST_STRING));
-
-module.export = convertAnagram;
+export { convertAnagram };
