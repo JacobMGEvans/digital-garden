@@ -5,13 +5,13 @@
   "scripts": {
     "start": "babel-node server.js",
     "watch": "parcel watch index.html",
-    "test": "jest",
+    "test": "jest --coverage --verbose",
+    "test:watch": "jest --watch --coverage --verbose",
     "babel": "babel-node"
   },
   "license": "MIT",
   "dependencies": {
     "express": "4.17.1",
-    "jest": "24.8.0",
     "jsdoc": "3.6.2",
     "parcel": "1.12.3",
     "react": "16.8.6",
@@ -21,6 +21,7 @@
     "sinon": "7.3.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.0",
     "@babel/core": "7.5.4",
     "@babel/node": "7.5.0",
     "@babel/plugin-proposal-class-properties": "7.5.0",
@@ -44,6 +45,7 @@
     "@babel/plugin-transform-member-expression-literals": "7.2.0",
     "@babel/plugin-transform-object-assign": "7.2.0",
     "@babel/plugin-transform-property-literals": "7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "7.5.4",
     "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.2",
@@ -56,6 +58,7 @@
     "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-import": "2.18.0",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.14.2"
+    "eslint-plugin-react": "7.14.2",
+    "jest": "^24.8.0"
   }
 }

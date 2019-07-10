@@ -5,7 +5,7 @@
   },
   "plugins": ["babel"],
   "extends": ["airbnb"],
-  "env": { "browser": true },
+  "env": { "browser": true, "jest": true },
   "settings": {
     "polyfills": ["fetch"]
   },
