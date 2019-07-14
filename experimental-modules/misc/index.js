@@ -1,7 +1,5 @@
-const name = `James`;
+const oldArray = [1, 2, 3, 4, 5];
+const otherData = [`Jacob`];
 
-console.log((
-
-  () => { name; }
-)()
-);
+const newArray = [...oldArray, ...otherData, `cat`];
+console.log(newArray);
