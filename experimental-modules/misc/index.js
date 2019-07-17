@@ -6,5 +6,6 @@ const pointFreeDoubleInt = (ele) => Number.isInteger(ele) ? ele * 12 : ele;
 const newArray = [...oldArray, ...otherData, ...Object.values(animalNames)].map(pointFreeDoubleInt);
 console.log(newArray); // [ 12, 24, 36, 48, 60, 'Jacob', 'furball', 'sirbarksalot' ]
 
+
 const isObject = input => typeof input === `object` && !Array.isArray(input);
-console.log(isObject(animalNames));;
+console.log(isObject(animalNames));
