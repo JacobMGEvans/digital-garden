@@ -1,3 +1,4 @@
+/* eslint-disable no-fallthrough */
 function dirReduc(arr) {
   let NORTH = 0;
   let EAST = 0;
@@ -9,27 +10,37 @@ function dirReduc(arr) {
     SOUTH: [++SOUTH, --NORTH],
     WEST: [++WEST, --EAST],
   };
-  arr.map(ele => {
+  const obj = {
+    NORTH,
+    EAST,
+    SOUTH,
+    WEST,
+  };
+  // eslint-disable-next-line no-restricted-syntax
+  for (const ele of arr) {
     const upperEle = ele.toUpperCase();
+
     switch (upperEle) {
       case `NORTH`:
-        dict[ele];
+        obj[ele] = dict[ele];
         break;
       case `EAST`:
-        dict[ele];
+        obj[ele] = dict[ele];
         break;
       case `SOUTH`:
-        dict[ele];
+        obj[ele] = dict[ele];
         break;
       case `WEST`:
-        dict[ele];
+        obj[ele] = dict[ele];
         break;
       default:
-        console.log(`I SHOULDNT GET HERE`);
+        console.log(`Fallthrough`);
     }
-  });
+  }
 
-  console.log(NORTH, EAST, SOUTH, WEST);
+  return obj;
 }
 
-dirReduc([`NORTH`, `SOUTH`, `SOUTH`, `EAST`, `WEST`, `NORTH`, `WEST`]);
+console.log(
+  dirReduc([`NORTH`, `SOUTH`, `SOUTH`, `EAST`, `WEST`, `NORTH`, `WEST`])
+);
