@@ -18,10 +18,20 @@ Trying stuff and things
 
 ## (Functional Programming)[data-structures/functional-programming]
 
+## Challenges & Solutions
+### Arrays 
+
+### Strings
+
+### Maths
+
+### More Complex Data Structures & problems
+
 ## UI/Backend
 
-### React
+## React
 
-### GraphQL
+## GraphQL
 
-### Node
+## Node
+
