@@ -1,8 +1,7 @@
-const arrNames = ['Picard', 'Worf', 'Data', 'LaForge']
+const arrNames = [`Picard`, `Worf`, `Data`, `LaForge`];
 
-lastNum = arrNames.length - 1
+// const lastNum = arrNames.length - 1;
 
-const {length, 0: first, [length - 1]: last} = arrNames
+const { length, 0: first, [length - 1]: last } = arrNames;
 
-console.log(length, first, last) // 4 'Picard' 'LaForge' 
-
+console.log(length, first, last); // 4 'Picard' 'LaForge'

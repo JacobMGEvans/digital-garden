@@ -1,5 +1,5 @@
 const curry = (fn: any) => {
-  return function curried(...args) {
+  return function curried(...args: any[]) {
     const done: boolean = args.length >= fn.length;
     if (done) {
       return fn.apply(this, args);
