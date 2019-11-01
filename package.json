@@ -7,11 +7,14 @@
     "watch": "parcel watch index.html",
     "test": "jest --coverage --verbose",
     "test:watch": "jest --watch --coverage --verbose",
-    "babel": "babel-node"
+    "babel": "babel-node",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch"
   },
   "license": "MIT",
   "dependencies": {
     "@babel/plugin-transform-typescript": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
     "@testing-library/react": "^8.0.5",
     "express": "4.17.1",
     "jsdoc": "3.6.2",
@@ -19,7 +22,8 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "reactstrap": "8.0.0",
-    "sinon": "7.3.2"
+    "sinon": "7.3.2",
+    "typescript": "^3.6.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
