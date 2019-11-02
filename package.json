@@ -9,7 +9,8 @@
     "test:watch": "jest --watch --coverage --verbose",
     "babel": "babel-node",
     "type-check": "tsc --noEmit",
-    "type-check:watch": "yarn type-check -- --watch"
+    "type-check:watch": "yarn type-check -- --watch",
+    "ts:watch": "parcel watch ts-index.html"
   },
   "license": "MIT",
   "dependencies": {
