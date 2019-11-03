@@ -15,3 +15,7 @@ const number = evenNum => multipleOfTen => primeEvenTen => [
   Number.isInteger(primeEvenTen / 3),
 ];
 console.log(number(100)(100)(100));
+
+const xhr = new XMLHttpRequest();
+
+

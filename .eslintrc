@@ -21,7 +21,7 @@
         "functions": "ignore"
       }
     ],
-    "babel/semi": [2, "always"],
+    "babel/semi": ["error", "always"],
     "babel/new-cap": [0],
     "babel/no-invalid-this": [1],
     "babel/object-curly-spacing": [0],
