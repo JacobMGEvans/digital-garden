@@ -1,0 +1,32 @@
+<article>
+  <header>
+    <i>
+      tl;dr I made this article with HTML and use it to explain DOM, window,
+      document and how to manipulate/interface with those things with
+      JavaScript.
+    </i>
+  </header>
+  <main>
+    <h1>What is the DOM?</h1>
+    <p>
+      The
+      <abbr id="dom-abbr-id" title="Document Object Model">DOM</abbr>
+      essentially, is a representation of a document as a tree structure. The
+      parts of the tree structure branches are nodes, those nodes contain
+      objects. Let's take a moment to get an example of what something like this
+      might look like, and open up the browser console and you can copy & paste
+      then into the console
+      <code> document.getElementsByTagName('abbr')</code> what you get back
+      should look something like <code>HTMLCollection[abbr]</code> now what is
+      this? Well, it is an array-like (so not an array exactly) object of the
+      elements. So this is an example of many elements being found coming back
+      but we only have one "abbr" Element but if we were to pass in
+      <code>document.getElementsByTagName('code')</code> we would get a large
+      collection coming back because I am using that tag A ALOT lol.
+    </p>
+    <p>
+      So let's dig a little into grabbing a specific Element and utilizing some
+      Node and Element methods.
+    </p>
+  </main>
+</article>
