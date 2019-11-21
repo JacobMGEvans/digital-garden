@@ -3,5 +3,5 @@ node_modules/*
 ./node_modules
 .cache 
 dist
-coverage
 .vscode
+yarn-error.log
