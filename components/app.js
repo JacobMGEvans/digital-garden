@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-import Menu from "./menu";
 
-class App extends Component {
+export default class app extends Component {
   render() {
-    return <Menu />;
+    return (
+      <div />
+    );
   }
 }
-
-ReactDOM.render(<App />, document.getElementById(`root`));
