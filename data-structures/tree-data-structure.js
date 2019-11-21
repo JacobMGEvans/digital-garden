@@ -8,7 +8,7 @@ export function createNode(key) {
       const childNode = createNode(childKey);
       children.push(childNode);
       return childNode;
-    },
+    }
   };
 }
 
@@ -29,15 +29,15 @@ export function createTree(rootKey) {
         }
       }
       function addKeyToResult(node, depth) {
-        result
-          += result.length === 0
+        result +=
+          result.length === 0
             ? node.key
             : `\n${` `.repeat(depth * 2)}${node.key}`;
       }
 
       traverse(root, addKeyToResult, 1);
       return result;
-    },
+    }
   };
 }
 //! Create a DOM like tree example
@@ -50,6 +50,8 @@ const main = body.addChild(`main`);
 const footer = body.addChild(`footer`);
 const h1 = header.addChild(`h1 - Tree Lesson`);
 const p = main.addChild(`p - Learn about trees!`);
+const div = p.addChild(`div - on p tag `);
+const div2 = p.addChild(`div - another div on p tag`);
 const copyright = footer.addChild(`Copyright ${new Date().getFullYear()}`);
 
 console.log(dom.print());
