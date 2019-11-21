@@ -40,16 +40,16 @@ export function createTree(rootKey) {
     },
   };
 }
-// //! Create a DOM like tree example
-// const dom = createTree(`html`);
-// const head = dom.root.addChild(`head`);
-// const body = dom.root.addChild(`body`);
-// const title = head.addChild(`title - egghead Tree Lesson`);
-// const header = body.addChild(`header`);
-// const main = body.addChild(`main`);
-// const footer = body.addChild(`footer`);
-// const h1 = header.addChild(`h1 - Tree Lesson`);
-// const p = main.addChild(`p - Learn about trees!`);
-// const copyright = footer.addChild(`Copyright ${new Date().getFullYear()}`);
+//! Create a DOM like tree example
+const dom = createTree(`html`);
+const head = dom.root.addChild(`head`);
+const body = dom.root.addChild(`body`);
+const title = head.addChild(`title - egghead Tree Lesson`);
+const header = body.addChild(`header`);
+const main = body.addChild(`main`);
+const footer = body.addChild(`footer`);
+const h1 = header.addChild(`h1 - Tree Lesson`);
+const p = main.addChild(`p - Learn about trees!`);
+const copyright = footer.addChild(`Copyright ${new Date().getFullYear()}`);
 
-// console.log(dom.print());
+console.log(dom.print());
