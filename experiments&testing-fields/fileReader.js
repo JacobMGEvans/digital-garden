@@ -13,5 +13,6 @@ let lineNum = 0;
 // This is where you can change things per line. 
 readInterface.on("line", line => {
   lineNum++;
-  console.log(`${lineNum}   ${line}`);
+  console.log(`${lineNum}
+  ${line}`);
 });
