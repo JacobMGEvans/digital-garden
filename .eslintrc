@@ -1,15 +1,16 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 8
+    "ecmaVersion": 10
   },
   "plugins": ["babel", "react-hooks", "prettier"],
-  "extends": ["airbnb"],
+  "extends": ["plugin:prettier/recommended"],
   "env": { "browser": true, "jest": true },
   "settings": {
     "polyfills": ["fetch"]
   },
   "rules": {
+    "prettier/prettier": "error",
     "quotes": ["error", "backtick", "avoid-escape"],
     "comma-dangle": [
       "error",
