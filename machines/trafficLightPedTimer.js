@@ -1,16 +1,16 @@
 import { Machine } from "xstate";
 
-const pedestrianStates = {
-  initial: `walk`,
+const typingStates = {
+  initial: `idle`,
   states: {
-    walk: {
+    typing: {
       on: {
-        PED_TIMER: `wait`,
+        TYPING_TIMER: `typing`,
       },
     },
-    wait: {
+    stopped: {
       on: {
-        PED_TIMER: `stop`,
+        TYPING_TIMER: `stop`,
       },
     },
     stop: {},
