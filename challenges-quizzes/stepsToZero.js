@@ -1,13 +1,17 @@
+let steps = 0;
 function numberOfSteps(num) {
-  let N = num;
-  for (let i = 0; N === 0; i++) {
-    if (N % 2 === 0) {
-      N / 2;
+  for (let i = 0; i !== 0; i++) {
+    if (num % 2 === 0) {
+      num / 2;
+      steps++;
     }
-    if (N % 2 !== 0) {
-      N - 1;
+    if (num % 2 !== 0) {
+      num - 1;
+      steps++;
     }
-    console.log(N, `Number`, i, `step`);
   }
+
+  return steps;
 }
-console.log(numberOfSteps(16));
+
+console.log(numberOfSteps(8));
