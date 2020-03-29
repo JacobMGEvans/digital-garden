@@ -1,12 +1,13 @@
 let steps = 0;
 function numberOfSteps(num) {
-  for (let i = 0; i !== 0; i++) {
-    if (num % 2 === 0) {
-      num / 2;
+  let int = num;
+  for (let i = int; int !== 0; i--) {
+    if (int % 2 === 0) {
+      int = int / 2;
       steps++;
     }
-    if (num % 2 !== 0) {
-      num - 1;
+    if (int % 2 !== 0) {
+      int = int - 1;
       steps++;
     }
   }
