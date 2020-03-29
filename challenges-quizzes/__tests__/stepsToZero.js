@@ -9,3 +9,6 @@ test(`should resolve 14 to output 6`, () => {
 test(`should resolve 14 to output 6`, () => {
   expect(numberOfSteps(8)).toBe(4);
 });
+test(`should resolve 1000000 to output 26`, () => {
+  expect(numberOfSteps(1000000)).toBe(26);
+});
