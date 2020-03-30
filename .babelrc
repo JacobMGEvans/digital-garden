@@ -5,6 +5,7 @@
     "@babel/preset-typescript"
   ],
   "plugins": [
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
     "@babel/plugin-transform-typescript",
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-runtime",
