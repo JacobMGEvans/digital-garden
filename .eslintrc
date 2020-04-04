@@ -5,7 +5,7 @@
   },
   "plugins": ["babel", "react-hooks", "prettier"],
   "extends": ["plugin:prettier/recommended"],
-  "env": { "browser": true, "jest": true },
+  "env": { "browser": true, "jest": true, "es6": true },
   "settings": {
     "polyfills": ["fetch"]
   },

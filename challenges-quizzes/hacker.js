@@ -1,4 +1,5 @@
-const isVowel = (chck) => [`a`, `e`, `i`, `o`, `u`].indexOf(chck.toLowerCase()) !== -1;
+const isVowel = (chck) =>
+  [`a`, `e`, `i`, `o`, `u`].indexOf(chck.toLowerCase()) !== -1;
 
 const vowelSubstrings = (str) => {
   const substrMap = new Map();
@@ -13,7 +14,6 @@ const vowelSubstrings = (str) => {
     substrMap.set(i, string);
   });
 
-  
   return substrMap;
 };
 console.log(vowelSubstrings(`fdaarwwieou`));
