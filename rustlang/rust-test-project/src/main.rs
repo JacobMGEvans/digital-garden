@@ -1,6 +1,8 @@
 extern crate clap;
 
 use clap::{Arg, App};
+use indicatif::ProgressBar;
+use indicatif::ProgressStyle;
 
 fn main() {
     let matches = App::new("Rget")

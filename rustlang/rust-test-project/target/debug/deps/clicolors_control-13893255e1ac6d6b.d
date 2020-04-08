@@ -1,0 +1,10 @@
+/Users/jacobevans/personalProjects/sideProjects-Personal/experiments-and-research/rustlang/rust-test-project/target/debug/deps/clicolors_control-13893255e1ac6d6b.rmeta: /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/lib.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/common.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/terminfo.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/unix.rs
+
+/Users/jacobevans/personalProjects/sideProjects-Personal/experiments-and-research/rustlang/rust-test-project/target/debug/deps/libclicolors_control-13893255e1ac6d6b.rlib: /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/lib.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/common.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/terminfo.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/unix.rs
+
+/Users/jacobevans/personalProjects/sideProjects-Personal/experiments-and-research/rustlang/rust-test-project/target/debug/deps/clicolors_control-13893255e1ac6d6b.d: /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/lib.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/common.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/terminfo.rs /Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/unix.rs
+
+/Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/lib.rs:
+/Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/common.rs:
+/Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/terminfo.rs:
+/Users/jacobevans/.cargo/registry/src/github.com-1ecc6299db9ec823/clicolors-control-1.0.1/src/unix.rs:
