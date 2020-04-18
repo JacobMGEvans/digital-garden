@@ -1,8 +1,12 @@
-const express = require(`express`);
+// @ts-ignore
+import { Application } from "https://deno.land/x/oak/mod.ts";
+import { __ } from 'https://deno.land/x/dirname/mod.ts';
+const {__dirname } = __(import.meta);
 
 const PORT = process.env.PORT || 1234;
 
-express()
-  .use(express.static(`${__dirname}/dist`))
+const server = new Application()
+server()
+  .use(server.path(`${__dirname}/dist`))
   .get(`*`, (req, res) => res.sendFile(`${__dirname}/dist/index.html`))
   .listen(PORT, () => console.log(`__SERVER_RUNNING__`, PORT));
