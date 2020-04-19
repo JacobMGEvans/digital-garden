@@ -1,14 +1,24 @@
 // @ts-ignore
-import { Application } from "https://deno.land/x/oak/mod.ts";
+import { Application, Router, send } from "https://deno.land/x/oak/mod.ts";
 import { __ } from 'https://deno.land/x/dirname/mod.ts';
 const {__dirname } = __(import.meta);
 
-const PORT = this.env().PORT || 1234;
+// @ts-ignore
+const env = Deno.env();
+const PORT = `127.0.0.1:${env.PORT}`;
 
 const server = new Application()
+const router = new Router()
+router.get(`*`)
 
-await server.listen(`${PORT}`)
-// server()
-//   .use(server.path(`${__dirname}/dist`))
-//   .get(`*`, (req, res) => res.sendFile(`${__dirname}/dist/index.html`))
-//   .listen(PORT, () => console.log(`__SERVER_RUNNING__`, PORT));
+server
+  .use(async (cxt: any) => await send(cxt, cxt.request.path, { 
+    root: `${__dirname}`,
+    index: "index.html"
+}))
+server.use(router.routes())
+  
+
+console.log(`__SERVER_RUNNING__${PORT}`)
+await server.listen(PORT);
+
