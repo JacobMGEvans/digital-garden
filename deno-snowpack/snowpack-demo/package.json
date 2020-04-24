@@ -2,9 +2,9 @@
   "name": "snowpack-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "serve": "npx servor www index.html 8080 --reload --browse"
+    "serve": "npx servor --reload --browse"
   },
   "keywords": [],
   "author": "http://dev.to/jacobmgevans",
