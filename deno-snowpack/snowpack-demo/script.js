@@ -1,6 +1,9 @@
 const arr = [`Foo`, `Bar`, `World`];
 
-const newNode = document.body.createElement(`div`);
+const bodyNode = document.body;
+const newNode = document.createElement(`div`);
+const breakNode = document.createElement(`br`);
 arr.map((ele) => {
+  bodyNode.appendChild(newNode).appendChild(breakNode);
   newNode.append(ele);
 });

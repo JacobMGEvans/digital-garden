@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "serve": "npx servor --reload --browse"
+    "serve": "npx servor --reload --browse",
+    "snow": "snowpack --include src/**/*.js"
   },
   "keywords": [],
   "author": "http://dev.to/jacobmgevans",
