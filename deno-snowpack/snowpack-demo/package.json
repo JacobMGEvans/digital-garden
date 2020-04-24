@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npx servor www index.html 8080 --reload --browse"
   },
   "keywords": [],
-  "author": "",
+  "author": "http://dev.to/jacobmgevans",
   "license": "ISC"
 }
