@@ -1,5 +1,5 @@
 import * as React from 'react'
-const { useReducer } = React
+const { useState } = React
 
 
 type ErrorPartial<T> = {
@@ -10,15 +10,22 @@ type ErrorReadonly<T> = {
 }
 
 interface IError{
+    data: any
     message: string 
     timer: number
 }
 
 
 
-export function userErrorBoundry({message, timer}: ErrorPartial<IError>): ErrorReadonly<IError>{
+export function useErrorBoundry({data, message, timer}: ErrorPartial<IError>): ErrorReadonly<IError>{
+    const [error, seterror] = useState({})
+    try {
+        async () => await Promise.all(data)
+    } catch (error) {
+       throw new Error(message ?? error)
+    }
     
     return {message, timer}
 }
 
-console.log(userErrorBoundry({message: 'Error'}))
+console.log(useErrorBoundry({}))
