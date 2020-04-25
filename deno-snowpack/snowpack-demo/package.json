@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "http://dev.to/jacobmgevans",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "snowpack": "^1.7.1"
+  }
 }
