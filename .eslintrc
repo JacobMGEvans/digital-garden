@@ -3,8 +3,12 @@
   "parserOptions": {
     "ecmaVersion": 10
   },
-  "plugins": ["babel", "react-hooks", "prettier"],
-  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["babel", "react-hooks", "prettier", "testing-library"],
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:testing-library/react",
+    "plugin:react-hooks/recommended"
+  ],
   "env": { "browser": true, "jest": true, "es6": true },
   "settings": {
     "polyfills": ["fetch"]
@@ -22,6 +26,9 @@
         "functions": "ignore"
       }
     ],
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "warn",
     "jsx-a11y/alt-text": "off",
     "jsx-a11y/label-has-for": "off",
     "jsx-a11y/click-events-have-key-events": "off",
