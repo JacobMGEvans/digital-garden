@@ -1,9 +1,9 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 10
+    "ecmaVersion": 11
   },
-  "plugins": ["babel", "react-hooks", "prettier", "testing-library"],
+  "plugins": ["babel", "react-hooks", "prettier", "testing-library", "@typescript-eslint"],
   "extends": [
     "plugin:prettier/recommended",
     "plugin:testing-library/react",
