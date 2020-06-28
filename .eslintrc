@@ -1,18 +1,28 @@
 {
+  "root": true,
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 11
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  "plugins": ["babel", "react-hooks", "prettier", "testing-library", "@typescript-eslint"],
+  "plugins": ["babel", "react-hooks", "prettier", "testing-library"],
   "extends": [
     "plugin:prettier/recommended",
     "plugin:testing-library/react",
     "plugin:react-hooks/recommended"
   ],
-  "env": { "browser": true, "jest": true, "es6": true },
+  "env": { "node": true, "browser": true, "jest": true, "es2020": true },
   "settings": {
     "polyfills": ["fetch"]
   },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint", "babel", "react-hooks", "prettier", "testing-library"]
+    }
+  ],
   "rules": {
     "prettier/prettier": "error",
     "quotes": ["error", "backtick", "avoid-escape"],
@@ -49,13 +59,13 @@
     "import/no-webpack-loader-syntax": "off",
     "import/no-extraneous-dependencies": "off",
     "no-undef": "warn",
-    "no-console": "off",
+    "no-console": "warn",
     "no-plusplus": "off",
     "no-return-assign": "off",
     "no-param-reassign": "off",
-    "no-useless-escape": "off",
+    "no-useless-escape": "warn",
     "no-nested-ternary": "off",
-    "no-confusing-arrow": "off",
+    "no-confusing-arrow": "warn",
     "no-underscore-dangle": "off",
     "no-unused-expressions": "off",
     "no-unexpected-multiline": "off",
