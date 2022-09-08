@@ -1,9 +1,9 @@
 const TEST_STRING = `HELLO WORLD OF PEOPLE...`;
 const TEST_STRING2 = `people are everywhere?`;
 
-const TypeCheck = value => typeof value === `string`;
+const TypeCheck = (value: unknown) => typeof value === `string`;
 
-const SwitchReducer = (letter, ind, arr) => {
+const SwitchReducer = (letter: string, ind: number, arr: any[]) => {
   switch (true) {
     case ind === 0 && TypeCheck(letter):
       letter.toUpperCase();
@@ -24,9 +24,7 @@ const SwitchReducer = (letter, ind, arr) => {
  * @return {Array} Array of converted strings.
  * @example {Input => Output} 'HeLlO WOrLd' => 'Hello World'
  */
-const capitolizeFirst = (...args) =>
-  [...args].map(strings =>
-    Array.from(strings).map(SwitchReducer)
-  );
+export const capitolizeFirst = (...args: string[]): Array<any> =>
+  [...args].map((string: string) => Array.from(string).map(SwitchReducer));
 
 capitolizeFirst(TEST_STRING, TEST_STRING2);
