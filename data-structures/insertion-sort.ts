@@ -5,15 +5,14 @@
 // compares the next item, and insertts it before
 // or after depending on the comparison
 
-export function insertionSort(array) {
-  let i;
-  let j;
-
-  for (i = 1; i < array.length; i++) {
-    for (j = 0; j < i; j++) {
-      if (array[i] < array[j]) {
-        const [item] = array.splice(i, 1);
-        array.splice(j, 0, item);
+export function insertionSort(array: number[]) {
+  for (const item of array) {
+    const index = array.indexOf(item);
+    for (let i = 0; i < index; i++) {
+      if (array[i] > item) {
+        array.splice(index, 1);
+        array.splice(i, 0, item);
+        break;
       }
     }
   }
