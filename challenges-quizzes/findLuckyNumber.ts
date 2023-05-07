@@ -1,11 +1,11 @@
-function findLucky(arr) {
+function findLucky(arr: number[]): number {
   return (
     arr
-      .reduce((a, x) => {
+      .reduce((a: number[], x: number) => {
         a[x] = (a[x] || 0) + 1;
         return a;
       }, [])
-      .filter((x, i) => x === i)
+      .filter((x: number, i: number) => x === i)
       .pop() || -1
   );
 }
