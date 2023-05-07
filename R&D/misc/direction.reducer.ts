@@ -1,5 +1,14 @@
-/* eslint-disable no-fallthrough */
-function dirReduc(arr) {
+type Directions = "NORTH" | "EAST" | "SOUTH" | "WEST";
+
+type DirObj = {
+  [key: string]: number;
+  NORTH: number;
+  EAST: number;
+  SOUTH: number;
+  WEST: number;
+}
+
+export function dirReduc(arr: Directions[]): DirObj {
   let NORTH = 0;
   let EAST = 0;
   let SOUTH = 0;
@@ -10,28 +19,28 @@ function dirReduc(arr) {
     SOUTH: [++SOUTH, --NORTH],
     WEST: [++WEST, --EAST],
   };
-  const obj = {
+  const obj: DirObj = {
     NORTH,
     EAST,
     SOUTH,
     WEST,
   };
-  // eslint-disable-next-line no-restricted-syntax
+
   for (const ele of arr) {
     const upperEle = ele.toUpperCase();
 
     switch (upperEle) {
       case `NORTH`:
-        obj[ele] = dict[ele];
+        obj[ele] = dict[ele][0];
         break;
       case `EAST`:
-        obj[ele] = dict[ele];
+        obj[ele] = dict[ele][0];
         break;
       case `SOUTH`:
-        obj[ele] = dict[ele];
+        obj[ele] = dict[ele][0];
         break;
       case `WEST`:
-        obj[ele] = dict[ele];
+        obj[ele] = dict[ele][0];
         break;
       default:
         console.log(`Fallthrough`);
