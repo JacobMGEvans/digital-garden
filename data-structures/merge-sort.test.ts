@@ -1,7 +1,7 @@
 import { test, expect } from 'vitest'
 import { mergeSort } from './merge-sort'
 
-test('test test-field.mergeSort', () => {
+test('test mergeSort', () => {
   expect(mergeSort([2, 1, 3])).toEqual([1, 2, 3]);
   expect(mergeSort(['f', 'a', 'b', 'c', 'b', 'z'])).toEqual(['a', 'b', 'b', 'c', 'f', 'z']);
 
@@ -14,5 +14,4 @@ test('test test-field.mergeSort', () => {
   console.time('built-in sort');
   randomNumArray.sort((a, b) => a - b);
   console.timeEnd('built-in sort');
-
 })

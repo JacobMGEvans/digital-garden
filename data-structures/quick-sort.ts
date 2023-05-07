@@ -12,15 +12,18 @@
 
  */
 
-export function quickSort(array) {
+export function quickSort<T>(array: T[]): T[] {
   if (array.length < 2) {
     return array;
   }
-  const pivotIndex = array.length - 1;
+  const pivotIndex = Math.floor(Math.random() * array.length);
   const pivot = array[pivotIndex];
-  const left = [];
-  const right = [];
+  const left: T[] = [];
+  const right: T[] = [];
   for (let i = 0; i < array.length; i++) {
+    if (i === pivotIndex) {
+      continue;
+    }
     const currentItem = array[i];
     currentItem < pivot ? left.push(currentItem) : right.push(currentItem);
   }
