@@ -1,18 +1,9 @@
 import { createMachine } from "xstate";
 
-const typingStates = {
-  initial: `idle`,
+const pedestrianStates = {
   states: {
-    typing: {
-      on: {
-        TYPING_TIMER: `typing`,
-      },
-    },
-    stopped: {
-      on: {
-        TYPING_TIMER: `stop`,
-      },
-    },
+    walk: {},
+    wait: {},
     stop: {},
   },
 };
@@ -45,10 +36,10 @@ const currentState = `yellow`;
 const nextState = lightMachine.transition(currentState, `TIMER`).value;
 console.log(nextState);
 // => {
-//   red: 'walk'
+//   red: 'stop'
 // }
 
-lightMachine.transition(`red.walk`, `PED_TIMER`).value;
+lightMachine.transition(`red.stop`, `PED_TIMER`).value;
 // => {
-//   red: 'wait'
+//   red: 'walk'
 // }
