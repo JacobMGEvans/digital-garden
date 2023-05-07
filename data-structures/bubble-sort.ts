@@ -5,7 +5,7 @@
 // indicate a swap occured
 // if a swap occured, loop through the array again
 // continue looping until no swaps occur
-export function bubbleSort(array) {
+export function bubbleSort(array: number[]) {
   let swapped = false;
   do {
     swapped = false;
