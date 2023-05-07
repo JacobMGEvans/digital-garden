@@ -1,4 +1,4 @@
-function XO(s) {
+function XO(s: string) {
   const arr = [...s];
   let countX = 0;
   let countO = 0;
