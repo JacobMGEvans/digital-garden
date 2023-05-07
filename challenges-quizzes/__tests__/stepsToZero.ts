@@ -1,3 +1,4 @@
+import { test, expect } from "vitest"
 import { numberOfSteps } from "../stepsToZero";
 
 test(`should resolve 14 to output 6`, () => {

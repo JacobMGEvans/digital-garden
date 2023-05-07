@@ -1,4 +1,4 @@
-import { Machine } from "xstate";
+import { createMachine } from "xstate";
 
 const typingStates = {
   initial: `idle`,
@@ -17,7 +17,7 @@ const typingStates = {
   },
 };
 
-const lightMachine = Machine({
+const lightMachine = createMachine({
   id: `light`,
   initial: `green`,
   states: {

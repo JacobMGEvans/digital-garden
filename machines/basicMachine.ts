@@ -1,6 +1,6 @@
-import { Machine } from "xstate";
+import { createMachine } from "xstate";
 
-const paymentMachine = Machine({
+const paymentMachine = createMachine({
   id: `payment`,
   initial: `method`,
   states: {
