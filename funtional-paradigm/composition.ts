@@ -1,13 +1,13 @@
 // Composition
 
-const f = x => x + 2;
-const g = x => x * 3;
+const f = (x: number) => x + 2;
+const g = (x: number) => x * 3;
 
 console.log(f(g(3))); // output: 11
 
-const scream = str => str.toUpperCase();
-const exlaim = str => `${str}!`;
-const repeat = str => `${str}${str}`;
+const scream = (str: string) => str.toUpperCase();
+const exlaim = (str: any) => `${str}!`;
+const repeat = (str: any) => `${str}${str}`;
 
 /**
  * compose takes in functions & returns their curried values
@@ -24,5 +24,5 @@ const repeat = str => `${str}${str}`;
  * OUTPUT: `Hello World Hello World!`
  *
  */
-export const compose = (...fns) => x =>
-  fns.reduceRight((acc, fn) => fn(acc), x);
+export const compose = <T>(...fns: ((arg: T) => T)[]): ((arg: T) => T) =>
+  (x: T) => fns.reduceRight((acc, fn) => fn(acc), x);
